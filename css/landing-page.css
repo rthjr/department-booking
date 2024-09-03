@@ -1,0 +1,142 @@
+header {
+    height: 100vh;
+    background-image:
+        linear-gradient(to left, #37016a69, #6118aa9a),
+        url("../assets/image/hotels-landing.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.navbar {
+    padding: 10px 0px;
+}
+
+.navbar .d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* nav brand */
+
+.navbar .nav-brand {
+    width: 130px;
+    overflow: hidden;
+}
+
+.navbar .nav-brand a img {
+    width: 100%;
+}
+
+/* end navbrand */
+
+/* menu */
+
+.navbar .nav-navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-navbar .nav-item {
+    list-style-type: none;
+}
+
+.navbar .nav-navbar .nav-item .nav-link {
+    text-decoration: none;
+    color: #f2e7ff;
+    padding: 15px 10px;
+    border: 2px solid transparent;
+    display: inline-block;
+    transition: 0.4s ease-in-out all;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.navbar .nav-navbar .nav-item .nav-link:hover {
+    border-bottom: 2px solid #6118aa;
+}
+
+/* end menu */
+
+/* login */
+.navbar .nav-login button {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar .nav-login button a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    padding: 13px 20px;
+    background-color: #53168d;
+    border-radius: 5px;
+    color: #f2e7ff;
+    transition: 0.4s ease-in-out all;
+}
+
+.navbar .nav-login button a:hover {
+    background-color: #6118aa;
+    color: #e7d2ff;
+}
+
+/* end login */
+
+/* nav content */
+.nav-title .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.nav-title .row .col-5{
+    width: 500px;  
+}
+
+.nav-title .col-5 .text h1{
+    color: #faf5ff;
+    font-weight: 600;
+}
+
+.nav-title .col-5 .text p{
+    margin-top: 15px;
+    color: #f2e7ff;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.nav-title .col-7{
+    width: 600px;
+    height: 700px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.nav-title .col-7 img{
+    width: 100%;
+}
+/* main */
+main{
+    position: relative;
+}
+
+.up-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 90px;
+    right: 200px;
+    color: white;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 50%;
+}
+
+.promotion{
+    height: 100vh;
+    margin-top: 50px;
+}

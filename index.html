@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTHJR Landing</title>
+    <!-- landing css -->
+    <link rel="stylesheet" href="css/landing-page.css">
+    <!-- globle css -->
+    <link rel="stylesheet" href="css/globle.css">
+    <!-- swiper -->
+    <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container d-flex">
+                <div class="nav-brand">
+                    <a href=""><img src="assets/image/rthjr-high-resolution-logo-transparent.png" alt="logo"></a>
+                </div>
+                <ul class="nav-navbar">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ទំព័រដើម</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">តម្លៃពិសេស</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ពេញនិយម</a>
+                    </li>
+                    </li>
+                </ul>
+                <div class="nav-login">
+                    <button>
+                        <a href="#" class="btn btn-primary">Login</a>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="nav-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="text">
+                            <h1>អ្វីទៅជា RTHJR Booking</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tenetur placeat eaque
+                                a error
+                                quasi, dolore culpa doloremque veniam nobis, inventore perferendis sapiente ipsam
+                                debitis quia
+                                odit
+                                aliquam neque nam.</p>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="assets/image/swiper1.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="assets/image/swiper2.jpg" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="promotion">
+            <div class="container">
+                <div class="title">
+                    <h1>
+                        កន្លែងល្បីៗ
+                    </h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="border-arrow">
+            <div class="up-arrow">
+                <a href="#"><i class="fa-solid fa-up-long"></i></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- swiper -->
+    <script src="assets/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 0,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>

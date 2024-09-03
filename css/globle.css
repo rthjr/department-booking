@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Khmer&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Khmer", sans-serif;
+    background-color: #faf5ff;
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
