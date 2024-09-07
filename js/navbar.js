@@ -1,12 +1,31 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const navbar = document.querySelector('.navbar'); // Make sure this selector is correct for your navbar
-    window.addEventListener('scroll', function () {
-        const scrollPosition = window.scrollY; // Get current scroll position
+window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    const navLinks = document.querySelectorAll('.nav-navbar .nav-link');
+    const scrollThreshold = window.innerHeight * 0.3; 
 
-        if (scrollPosition > window.innerHeight) { // Check if scrolled beyond 100vh
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
+    if (window.scrollY > scrollThreshold) {
+        navbar.classList.add('scrolled'); 
+        navLinks.forEach((link) => {
+            link.classList.add('scrolled');
+        });
+    } else {
+        navbar.classList.remove('scrolled');  
+        navLinks.forEach((link) => {
+            link.classList.remove('scrolled');
+        });
+    }
+});
+
+window.addEventListener('scroll', function () {
+    const navbar = document.querySelector('.navbar');
+    const navLinks = document.querySelectorAll('.navbar .nav-login button a');
+    const scrollThreshold = window.innerHeight * 0.3;
+
+    if (window.scrollY > scrollThreshold) {
+        navbar.classList.add('scrolled');
+        navLinks.forEach(link => link.classList.add('scrolled'));
+    } else {
+        navbar.classList.remove('scrolled');
+        navLinks.forEach(link => link.classList.remove('scrolled'));
+    }
 });
