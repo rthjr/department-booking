@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.opt{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.opt .opt-input{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.opt .opt-input .opt-title h1{
+    width: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.opt .opt-input .opt-title p{
+    color: rgb(100, 100, 100);
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.opt .opt-input .opt-title p span{
+    color:  #6118aa;
+    font-size: 18px;
+}
+
+.opt .opt-input table tr{
+    display: flex;
+    gap: 15px;
+}
+
+.opt .opt-input table td input{
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #6172f334;
+    border: 2px solid  #6118aaa1;
+    border-radius: 7px;
+    text-align: center;
+    outline: none;
+}
+
+.opt .opt-input table .button-submit{
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.opt .opt-input .button-submit button{
+    width: 100%;
+    border: none;
+    background-color: #6118aa;
+    border: 2px solid  #6118aa;
+    border-radius: 8px;
+}
+
+.opt .opt-input .button-submit button a{
+    padding: 10px 45px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.reset-opt{
+    margin-top: 20px;
+    width: 100%;
+    color:  black;
+    text-align: center;
+    font-weight: 400;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* right half side */
+
+.opt .img{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6118aa;
+}
+
+.opt .img .otp-img-frame{
+    width: 900px;
+    height: 900px;
+    overflow: hidden;
+}
+
+.opt .img img{
+    width: 100%;
+}

@@ -21,14 +21,14 @@ header {
 }
 
 .navbar .nav-navbar .nav-link.scrolled {
-    border-bottom: 2px solid #37016a00; 
+    border-bottom: 2px solid #37016a00;
 }
 
 .navbar .nav-navbar .nav-link.scrolled:hover {
-    border-bottom: 2px solid #37016a !important; 
+    border-bottom: 2px solid #37016a !important;
 }
 
-.navbar .nav-login button a.scrolled:hover{
+.navbar .nav-login button a.scrolled:hover {
     background-color: #37016a !important;
 }
 
@@ -65,7 +65,7 @@ header {
 
 .navbar .nav-navbar .nav-item .nav-link {
     text-decoration: none;
-    color: #f2e7ff;
+    color: #f7f7f7;
     padding: 15px 10px;
     border: 2px solid transparent;
     display: inline-block;
@@ -93,13 +93,13 @@ header {
     padding: 13px 20px;
     background-color: #53168d;
     border-radius: 5px;
-    color: #f2e7ff;
+    color: #f7f7f7;
     transition: 0.4s ease-in-out all;
 }
 
 .navbar .nav-login button a:hover {
     background-color: #6118aa;
-    color: #e7d2ff;
+    color: #f7f7f7;
 }
 
 /* end login */
@@ -117,7 +117,7 @@ header {
 }
 
 .nav-title .col-5 .text span {
-    color: #f2e7ff;
+    color: #f7f7f7;
     font-size: 20px;
     font-weight: 600;
 }
@@ -125,13 +125,13 @@ header {
 .nav-title .col-5 .text h1 {
     font-size: 60px;
     margin-top: 50px;
-    color: #faf5ff;
+    color: #f7f7f7;
     font-weight: 600;
 }
 
 .nav-title .col-5 .text p {
     margin-top: 15px;
-    color: #f2e7ff;
+    color: #f7f7f7;
     font-size: 17px;
     text-align: justify;
 }
@@ -146,7 +146,7 @@ header {
     font-size: 17;
     font-weight: 600;
     text-decoration: none;
-    color: #e7d2ff;
+    color: #f7f7f7;
     background-color: #53168d;
     padding: 7px 15px;
     border-radius: 10px;
@@ -154,7 +154,7 @@ header {
 
 .nav-title .col-5 .text .a a:hover {
     background-color: #6118aa;
-    color: #e7d2ff;
+    color: #f7f7f7;
 }
 
 .nav-title .col-7 {
@@ -194,23 +194,24 @@ header {
     width: 100%;
 }
 
-.promotion .promotion-content .text h2 {
+.promotion .promotion-content .text h4 {
     text-align: right;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 15px;
 }
 
-.promotion .promotion-content .text h2 a {
+.promotion .promotion-content .text h4 a {
     border-radius: 5px;
-    background-color: #53168d;
-    color: #f2e7ff;
+    background-color: #6118aa;
+    color: #f7f7f7;
     padding: 6px 13px;
     text-decoration: none;
     display: inline-block;
+    transition: 0.4s ease-in-out all;
 }
 
-.promotion .promotion-content .text h2 a:hover{
-    background-color: #6118aa;
+.promotion .promotion-content .text h4 a:hover {
+    background-color: #37016a;
 }
 
 .promotion .promotion-content .item {
@@ -219,6 +220,63 @@ header {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
     transition: 0.4s ease-in-out all;
+
+    display: flex;
+}
+
+.promotion .promotion-content .item .item-image {
+    width: 380px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.promotion .promotion-content .item .item-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.promotion .promotion-content .item table {
+    width: 100%;
+    height: 200px;
+}
+
+.promotion .promotion-content table tr td {
+    padding: 10px 20px;
+}
+
+.promotion .promotion-content table tr td h3{
+    font-weight: 600;
+    color: #292929;
+    font-size: 20px;
+}
+
+
+.promotion .promotion-content table tr td h4{
+    font-weight: 600;
+    color: #292929;
+    font-size: 15px;
+}
+
+.promotion .promotion-content table tr td span i{
+    color: red;
+}
+
+.promotion .promotion-content table tr td a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #37016a;
+    font-size: 15px;
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 7px;
+    background-color: #6118aa;
+    transition: 0.4s ease-in-out all;
+    color: #f7f7f7;
+}
+
+.promotion .promotion-content table tr td a:hover{
+    background-color: #37016a;
 }
 
 .promotion .promotion-content .item:hover {
@@ -233,13 +291,13 @@ header {
     margin-top: 46px;
 }
 
-.popular-place .title h2{
+.popular-place .title h2 {
     font-size: 30px;
     color: #37016a;
     text-align: center;
 }
 
-.promotion{
+.promotion {
     overflow-x: auto;
     white-space: nowrap;
     padding: 10px;
@@ -255,17 +313,123 @@ header {
 }
 
 .box-dis {
-    min-width: 400px;
-    height: 500px;
-    background-color: #faf5ff   ;
+    min-width: 600px;
+    height: 300px;
+    background-color: #f7f7f7;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 20px;
-    background-color: #6118aa;
 }
 
+.box-dis .row{
+    display: flex;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.box-dis .col-6{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px 0px 0px 10px;
+    position: relative;
+}
+
+.discount-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f7f7f7;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 24px;
+    font-weight: bold;
+    z-index: 1;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 7px;
+}
+
+.discount-overlay h4{
+    font-weight: 600;
+    color: #f7f7f7;
+    font-size: 15px;
+}
+
+.box-dis .col-6 img{
+    width: 100%;
+    height: 100%;
+}
+
+.popular-place .text{
+    margin-top: 20px;
+}
+
+.popular-place .text h4{
+    text-align: right;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.popular-place .text h4 a{
+    border-radius: 5px;
+    background-color: #6118aa;
+    color: #f2e7ff;
+    padding: 6px 13px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.4s ease-in-out all;
+}
+
+.popular-place .text h4 a:hover{
+    background-color: #37016a;
+}
+
+.promotion .scroll-container .box-dis .col-6 table{
+    width: 100%;
+    height: 300px;
+}
+
+.promotion .scroll-container .box-dis .col-6 table tr td{
+    padding: 0px 2px;
+}
+
+.promotion .scroll-container .box-dis .col-6 table tr td h3{
+    font-weight: 600;
+    color: #292929;
+    font-size: 20px;
+}
+
+.promotion .scroll-container .box-dis .col-6 table tr td h4{
+    font-weight: 600;
+    color: #292929;
+    font-size: 15px;
+}
+
+.promotion .scroll-container .box-dis .col-6 table tr td span{
+    font-size: 15px;
+}
+
+.promotion .scroll-container .box-dis .col-6 table tr td i{
+    color: red;
+}
+
+.promotion .scroll-container .box-dis .col-6 table tr td a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #37016a;
+    font-size: 15px;
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 7px;
+    background-color: #6118aa;
+    transition: 0.4s ease-in-out all;
+    color: #f7f7f7;
+}
 
 /* footer */
 footer {
@@ -279,8 +443,9 @@ footer {
 }
 
 .bottom-page .box {
-    width: 280px;
-    height: 400px;
+    margin-top: 50px;
+    width: 300px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -288,29 +453,56 @@ footer {
 
 .bottom-page .box .footer-container {
     height: 200px;
-    width: 100%;
+    width: 300px;
     display: flex;
     justify-content: center;
+}
+
+.bottom-page .box .footer-container .quick-link a{
+    text-decoration: none;
+}
+
+.footer-brand{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
     align-items: center;
 }
 
+.footer-brand img{
+    width: 100%;
+}
+
 .bottom-page .box .footer-container h3 {
-    text-align: center;
     font-weight: 600;
-    color: #f2e7ff;
+    color: #f7f7f7  ;
     font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .bottom-page .box .footer-container a {
     font-weight: 600;
-    color: #f2e7ff;
+    color: #f7f7f7;
     font-size: 17px;
 }
 
 .bottom-page .box .footer-container p {
     font-weight: 600;
-    color: #f2e7ff;
+    color: #f7f7f7;
     font-size: 17px;
+}
+
+.bottom-page .box .footer-container .social-media i{
+    font-size: 30px;
+    padding: 0px 5px;
+    color: #f7f7f7;
+}
+
+footer h4{
+    text-align: center;
+    color: #f7f7f7;
 }
 
 /* end footer */

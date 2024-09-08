@@ -1,0 +1,13 @@
+.login .login-input .login-email{
+    margin: 0;
+}
+
+.login .login-input .login-checkbox span{
+    color: rgb(74, 171, 251);
+}
+
+.login .login-input .login-create a{
+    color: rgb(74, 171, 251);
+    font-weight: 600;
+    font-size: 15px;
+}
