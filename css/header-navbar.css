@@ -1,0 +1,126 @@
+.header {
+    background-color: #6118aa;
+    padding: 10px 0;
+    z-index: 999;
+}
+
+.d-flex {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 130px;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.header .d-flex .profile i {
+    font-size: 30px;
+    color: #f7f7f7;
+}
+
+/* end header */
+
+/* navbar */
+nav {
+    background-color: #6118aa;
+    padding: 10px 0;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+}
+
+nav .nav-menu .nav-item {
+    list-style-type: none;
+}
+
+nav .nav-menu .nav-item .nav-link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    color: #f7f7f7;
+    padding: 10px 15px;
+    display: inline-block;
+    border: 2px solid transparent;
+    transition: 0.4s ease-in-out all;
+}
+
+nav .nav-menu .nav-item .nav-link:hover {
+    border-bottom: 2px solid #37016a;
+}
+
+nav .nav-search input {
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    width: 300px;
+}
+
+nav .nav-checkout{
+    position: relative;
+}
+
+nav .nav-checkout a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px 15px;
+    color: #f7f7f7;
+    display: inline-block;
+    transition: 0.4s ease-in-out all;
+}
+
+.dropdown {
+    width: 200px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    border-radius: 20px 20px 0px 0px;
+    left: 0;
+    /* hide the drop down */
+    /* shap to see value have 0 and 1  */
+    opacity: 0;
+    /* hide action like hover */
+    visibility: hidden;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12);
+    z-index: 999;
+}
+
+nav .nav-checkout:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s ease-in-out all;
+}
+
+.dropdown .drop-navbar {
+    list-style-type: none;
+}
+
+.dropdown .drop-navbar .drop-item .drop-link {
+    text-decoration: none;
+    /* to make the width and height full */
+    display: block;
+    padding: 10px 10px;
+    border: 2px solid transparent;
+    color: black;
+}
+
+.dropdown .drop-navbar .drop-item .drop-link:hover {
+    border-bottom: 2px solid black;
+}   
+
+.dropdown .drop-navbar .drop-item .drop-link:hover {
+    border-bottom: 2px solid black;
+}
+
+nav .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
