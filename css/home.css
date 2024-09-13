@@ -1,17 +1,220 @@
 .video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 90vh;
     overflow: hidden;
     z-index: -1;
+   
 }
 
 .video video {
     width: 100%;
-    height: 100%;
     object-fit: cover;
+    position: relative;
+}
+
+.video .video-title{
+    width: 1200px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.41);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 35vh;
+    bottom: 30vh;
+}
+
+.video .video-title h1{
+    font-weight: 600;
+    font-size: 100px;
+    text-align: left;
+    color:  #37016a;
+}
+
+.video .video-title h2{
+    font-weight: 600;
+    font-size: 30px;
+    text-align: left;
+    color:  #000000;
 }
 
 
+/* down arrow  */
+.down-arrow-con {
+    width: 100%;
+}
+
+.down-arrow-con i {
+    position: absolute;
+    top: 90vh;
+    right: 50%;
+    font-size: 50px;
+}
+
+/* best offer */
+.best-offer .box-best-offer {
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.best-offer .box-best-offer .best-offer-side {
+    margin-top: 50px;
+    width: 100%;
+    height: 300px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+.best-offer .box-best-offer .title h2 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: #37016a;
+}
+
+.best-offer .box-best-offer .best-offer-side .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* col  5 */
+.best-offer .box-best-offer .best-offer-side .row .col-5 {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.best-offer .box-best-offer .best-offer-side .col-5 img {
+    width: 100%;
+    height: 100%;
+}
+
+.best-offer .box-best-offer .best-offer-side .row .col-7 {
+    width: 900px;
+    height: 300px;
+    display: flex;
+}
+
+.best-offer .box-best-offer .best-offer-side .row .col-7 .box1 {
+    width: 225px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-best-offer .best-offer-side .row .col-7 .box1 h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #37016a;
+}
+
+.box-best-offer .best-offer-side .row .col-7 .box1 h4 {
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.box-best-offer .best-offer-side .row .col-7 .box1 h4 i {
+    color: red;
+}
+
+.box-best-offer .best-offer-side .row .col-7 .box1 h3 {
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.box-best-offer .best-offer-side .row .col-7 .box1 h3 span {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.best-offer .box-best-offer .best-offer-side .row .col-7 .box2 {
+    width: 675px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.box-best-offer .best-offer-side .row .col-7 .box2 .title1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #37016a;
+}
+
+.box-best-offer .best-offer-side .row .col-7 .box2 ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.box-best-offer .best-offer-side .row .col-7 .box2 ul li {
+    font-weight: 600;
+    list-style-type: none;
+}
+
+.box-best-offer .best-offer-side .row .col-7 .box2 .title2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #37016a;
+}
+
+.box-best-offer .best-offer-side .row .col-7 .box2 span {
+    font-weight: 600;
+}
+
+
+.box-best-offer .best-offer-side .row .col-7 .box2 .title3 {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #37016a;
+}
+
+.box-best-offer .best-offer-side .row .col-7 .box2 .choose .option {
+    display: flex;
+    gap: 10px;
+}
+
+.box-best-offer .best-offer-side .row .col-7 .box2 .price {
+    margin-top: 10px;
+    display: block;
+    width: 635px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-best-offer .best-offer-side .row .col-7 .box2 .price h4 {
+    text-align: right;
+}
+
+
+.box-best-offer .best-offer-side .row .col-7 .box2 .price .price-discount {
+    text-align: left;
+    color: green;
+}
+
+.box-best-offer .best-offer-side .row .col-7 .box2 .a-price {
+    display: inline-block;
+    padding: 8px 10px;
+    background-color: #6118aa;
+    border-radius: 10px;
+    color: #f7f7f7;
+    text-decoration: none;
+    transition: 0.4s ease-in-out all;
+}
+
+.box-best-offer .best-offer-side .row .col-7 .box2 .a-price:hover {
+    background-color: #37016a;
+}
+
+/* col 7 */
+
+/* popular section */
+.popular-home {
+    height: 100vh;
+}

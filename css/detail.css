@@ -1,0 +1,139 @@
+.detail-border {
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.detail-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-header .detail-right h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.detail-header .detail-right span {
+    margin-top: 10px;
+}
+
+.detail-header .detail-right span i {
+    color: red;
+}
+
+.detail-header .detail-right .detail-right-link {
+    margin-top: 10px;
+}
+
+.detail-header .detail-right a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.detail-header .detail-left h4 {
+    font-weight: 600;
+
+}
+
+.detail-header .detail-left .title {
+    margin-top: 10px;
+}
+
+.detail-header .detail-left .detail-left-link {
+    margin-top: 10px;
+}
+
+.detail-header .detail-left .detail-left-link a {
+    text-decoration: none;
+    padding: 7px 30px;
+    background-color: #6118aa;
+    border-radius: 10px;
+    display: inline-block;
+    color: #f7f7f7;
+}
+
+.detail-border .detail-line-break {
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.detail-border .detail-gallary {
+    width: 100%;
+    height: 700px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.detail-border .detail-gallary img {
+    height: 100%;
+    width: 100%;
+}
+
+.detail-border .detail-description {
+    margin-top: 10px;
+}
+
+.detail-border .detail-description .title {
+    margin-top: 10px;
+}
+
+.detail-border .detail-description ul {
+    margin-left: 20px;
+}
+
+.detail-border .detail-description ul li {
+    color: green;
+}
+
+/* schedule */
+.detail-border .detail-process {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.detail-border .detail-process .detail-schedule input {
+    padding: 10px 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+.detail-border .detail-booking-process {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-border .detail-booking-process label {
+    margin-right: 10px;
+}
+
+.detail-border .detail-booking-process .title {
+    margin-top: 10px;
+}
+
+.detail-border .detail-booking-process .detail-final-process {
+    width: 550px;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.detail-border .detail-booking-process .detail-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail-border .detail-booking-process .detail-flex .detail-kok {
+    padding: 7px 30px;
+    text-align: right;
+    border-radius: 10px;
+    display: inline-block;
+    background-color: #6118aa;
+    color: #f7f7f7;
+    text-decoration: none;
+}
