@@ -1,8 +1,9 @@
 .profile-container{
+    margin: 50px 0;
     display: flex;
     align-content: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
 }
 
 h2 {
@@ -81,4 +82,27 @@ h2 {
 
 .edit-btn:hover {
     background-color: #e0e0e0;
+}
+
+.address-section .info-details .info-item form{
+    display: flex;
+    gap: 20px;
+}
+
+.profile-submit{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.profile-submit a{
+    margin-top: 20px;
+    background-color: #6118aa;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: right;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out all;
 }
