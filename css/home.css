@@ -188,6 +188,10 @@
     justify-content: space-between;
 }
 
+.box-best-offer .best-offer-side .row .col-7 .box2 .price h3{
+    color: #37016a;
+}
+
 .box-best-offer .best-offer-side .row .col-7 .box2 .price h4 {
     text-align: right;
 }

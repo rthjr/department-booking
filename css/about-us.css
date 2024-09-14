@@ -1,0 +1,93 @@
+/* Overall Container */
+.container-about-us{
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Column */
+.left-column {
+    width: 30%;
+    background-color: #f1f3f4;
+    padding: 40px;
+    background-color: #f5f5ff; /* Light purple background */
+    text-align: center;
+}
+
+.left-column .contact p{
+    text-align: left;
+}
+
+.left-column .skills p{
+    text-align: left;
+}
+
+.left-column .soft-skills p{
+    text-align: left;
+}
+
+.left-column .languages p{
+    text-align: left;
+}
+
+
+.left-column img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.left-column h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.left-column p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.left-column h3 {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* Custom list for sections */
+.left-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.left-column ul li {
+    margin-bottom: 8px;
+}
+
+/* Right Column */
+.right-column {
+    width: 70%;
+    padding: 40px;
+}
+
+.right-column h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #555;
+    text-transform: uppercase;
+}
+
+.about p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+

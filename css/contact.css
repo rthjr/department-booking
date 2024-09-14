@@ -1,7 +1,6 @@
 .contact-center{
     display: flex;
     align-items: center;
-    height: 100vh;
 }
 
 .contact-container {
@@ -63,7 +62,7 @@ textarea {
 }
 
 .submit-btn {
-    background-color: #000;
+    background-color:  #6118aa;
     color: #fff;
     padding: 15px;
     border: none;
@@ -76,5 +75,5 @@ textarea {
 }
 
 .submit-btn:hover {
-    background-color: #333;
+    background-color: #37016a;
 }

@@ -73,18 +73,83 @@
 
 .detail-border .detail-description {
     margin-top: 10px;
+    
 }
 
-.detail-border .detail-description .title {
+.detail-border .detail-description h3{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.detail-border .detail-description i{
+    font-size: 30px;
+}
+
+.detail-border .detail-description .detail-description-phone{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}   
+
+.detail-border .detail-description .detail-description-phone i{
+    display: flex;
+    justify-content: center;
+}
+
+.detail-border .detail-description .detail-description-phone p{
     margin-top: 10px;
 }
 
-.detail-border .detail-description ul {
-    margin-left: 20px;
+.detail-border .detail-description h3{
+    text-align: center;
 }
 
-.detail-border .detail-description ul li {
-    color: green;
+.detail-border .detail-description .title {
+    margin: 30px 0px;
+}
+
+.detail-border .detail-facilities {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.detail-border .detail-facilities i{
+    display: flex;
+    justify-content: center;    
+}
+
+.detail-border .food{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.detail-border .food i{
+    display: flex;
+    justify-content: center;
+}
+
+/* map */
+.detail-border .map{
+    margin-top: 10px;
+}
+
+.detail-border .map h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.detail-border .map .map-size{
+    width: 100%;
+    height: 400px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.detail-border .map .map-size iframe{
+    width: 100%;
 }
 
 /* schedule */
