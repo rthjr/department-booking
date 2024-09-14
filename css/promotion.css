@@ -1,0 +1,54 @@
+main{
+    padding: 10px 0px;
+}
+
+.promotion-row{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.promotion-row .promotion-box{
+    width: 380px;
+    height: 100%; 
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 10px;
+}
+
+.promotion-row .promotion-box .promotion-photo{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.promotion-row .promotion-box .promotion-photo img{
+    width: 100%;
+    height: 100%;
+}
+
+.promotion-row .promotion-box .promotion-content .rate h3{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.promotion-row .promotion-box .promotion-content .deadline{
+    display: flex;
+    justify-content: space-between;
+}
+
+.promotion-row .promotion-box a{
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 10px;
+    color: white;
+    transition: 0.4s ease-in-out all;
+    text-decoration: none;
+    background-color: #8b27f6;
+}
+.promotion-row .promotion-box a:hover{
+    background-color: #7617d9;
+}

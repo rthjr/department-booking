@@ -73,34 +73,34 @@
 
 .detail-border .detail-description {
     margin-top: 10px;
-    
+
 }
 
-.detail-border .detail-description h3{
+.detail-border .detail-description h3 {
     font-weight: 600;
     font-size: 25px;
 }
 
-.detail-border .detail-description i{
+.detail-border .detail-description i {
     font-size: 30px;
 }
 
-.detail-border .detail-description .detail-description-phone{
+.detail-border .detail-description .detail-description-phone {
     display: flex;
     align-items: center;
     justify-content: space-around;
-}   
+}
 
-.detail-border .detail-description .detail-description-phone i{
+.detail-border .detail-description .detail-description-phone i {
     display: flex;
     justify-content: center;
 }
 
-.detail-border .detail-description .detail-description-phone p{
+.detail-border .detail-description .detail-description-phone p {
     margin-top: 10px;
 }
 
-.detail-border .detail-description h3{
+.detail-border .detail-description h3 {
     text-align: center;
 }
 
@@ -114,41 +114,41 @@
     align-items: center;
 }
 
-.detail-border .detail-facilities i{
+.detail-border .detail-facilities i {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
 }
 
-.detail-border .food{
+.detail-border .food {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.detail-border .food i{
+.detail-border .food i {
     display: flex;
     justify-content: center;
 }
 
 /* map */
-.detail-border .map{
+.detail-border .map {
     margin-top: 10px;
 }
 
-.detail-border .map h3{
+.detail-border .map h3 {
     text-align: center;
     font-weight: 600;
     font-size: 25px;
 }
 
-.detail-border .map .map-size{
+.detail-border .map .map-size {
     width: 100%;
     height: 400px;
     display: inline-block;
     overflow: hidden;
 }
 
-.detail-border .map .map-size iframe{
+.detail-border .map .map-size iframe {
     width: 100%;
 }
 
@@ -201,4 +201,62 @@
     background-color: #6118aa;
     color: #f7f7f7;
     text-decoration: none;
+}
+
+/* user command */
+.user-command-container {
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.user-command {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.user-command-description p {
+    width: 500px;
+    height: 300px;
+}
+
+.user-command .user-command-info {
+    display: flex;
+}
+
+.user-command .user-command-info .name-star {
+    margin-left: 10px;
+}
+
+.user-command .user-command-info .name-star h3 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.user-command .user-command-info .user-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-command .user-command-info .user-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.user-command-container .user-command-info .rate {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-command-container .user-command-info .rate .star-color {
+    color: yellow;
 }
