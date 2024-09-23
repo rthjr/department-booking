@@ -1,3 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Khmer&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Khmer", sans-serif;
+    background-color: #faf5ff;
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+}
 .success-container {
     text-align: center;
     
@@ -29,8 +50,7 @@ p {
 }
 
 .btn {
-    background-color: white;
-    color: #2196F3;
+    background-color: #8b27f6;
     padding: 15px 30px;
     border: none;
     border-radius: 5px;
@@ -40,5 +60,12 @@ p {
 }
 
 .btn:hover {
-    background-color: #f2f2f2;
+    background-color: #7617d9;
+}
+
+.form-container .button-container .btn a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    color: black;
 }
