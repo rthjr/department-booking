@@ -220,6 +220,10 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
+.user-command-description{
+    margin-top: 20px;
+}
+
 .user-command-description p {
     width: 500px;
     height: 300px;
@@ -259,4 +263,23 @@
 
 .user-command-container .user-command-info .rate .star-color {
     color: yellow;
+}
+
+.gawk-btn{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+.gawk{
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #6118aa;
+    color: white;
+    border-radius: 10px;
+}
+
+.gawk:hover{
+    background-color: #4b0f87;
+    cursor: pointer;
 }
