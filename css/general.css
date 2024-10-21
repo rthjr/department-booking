@@ -113,7 +113,9 @@ main .h2{
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-weight: 600;
+    font-family: "Khmer", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 #loadMore:hover {

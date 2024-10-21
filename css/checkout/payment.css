@@ -12,7 +12,8 @@
     width: 900px;
 }
 
-.payment-method, .order-summary {
+.payment-method,
+.order-summary {
     width: 50%;
     padding: 20px;
 }
@@ -55,7 +56,8 @@ h3 {
     font-size: 14px;
 }
 
-.credit-card-info input, .credit-card-info select {
+.credit-card-info input,
+.credit-card-info select {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -72,18 +74,18 @@ h3 {
     width: 30%;
 }
 
-.payment-photo{
+.payment-photo {
     width: 100%;
     height: 400px;
     overflow: hidden;
 }
 
-.payment-photo img{
+.payment-photo img {
     height: 100%;
     width: 100%;
 }
 
-.promotion-detail h3{
+.promotion-detail h3 {
     margin-top: 10px;
 }
 
@@ -91,33 +93,57 @@ h3 {
     margin-top: 10px;
 }
 
-.money span{
+.money span {
     color: green;
 }
 
-.like-best-offer span i{
+.like-best-offer span i {
     color: red;
 }
 
-.purchase-btn {
-    border: 2px solid #8b27f6;
+.button-checkout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-checkout .back-button-checkout {
+    padding: 1rem;
+    border: none;
     background-color: transparent;
-    width: 100%;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+    margin-top: 1rem;
 }
 
+.button-checkout .next-button-checkout {
+    padding: 1rem;
+    border: none;
+    background-color: transparent;
+    margin-top: 1rem;
+}
 
-.purchase-btn a{
+.button-checkout .back-button-checkout a {
+    padding: 1rem;
+    background-color: #8b27f6;
+    color: #e7f1ff;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    color: black;
-    padding: 15px;
-    display: block;
+    border-radius: 1rem;
+    transition: 0.2s all;
 }
 
-.purchase-btn:hover {
-    background-color:#7617d9;
+.button-checkout .next-button-checkout a {
+    padding: 1rem;
+    background-color: #8b27f6;
+    color: #e7f1ff;
+    text-decoration: none;
+    font-family: "Khmer", sans-serif;
+    font-size: 1rem;
+    border-radius: 1rem;
+    transition: 0.2s;
+}
+
+.button-checkout .back-button-checkout a:hover{
+    background-color: #37016a;
+}
+
+.button-checkout .next-button-checkout a:hover{
+    background-color: #37016a;
 }
