@@ -1,33 +1,39 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container{
+
+body {
+    font-family: "Khmer", sans-serif;
+    font-size: 1rem;
+}
+
+.container {
     width: 1200px;
     margin: auto;
 }
 
-.landing{
+.landing {
     height: 100vh;
     background-color: #6118aa;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
 }
 
-.landing .image{
+.landing .image {
     width: 500px;
     height: 500px;
     overflow: hidden;
 }
 
-.landing .image img{
+.landing .image img {
     width: 100%;
 }
 
@@ -35,17 +41,17 @@ table {
     width: 100%;
 }
 
-table td button,a{
+table td button,
+a {
     width: 240px;
-    height: 100%;   
+    height: 100%;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 800;
     font-size: 18px;
     border-radius: 10px;
 }
 
-table td .left{
+table td .left {
     border: 2px solid #8b27f6;
     background-color: #8b27f6;
     transition: 0.4s ease-in-out all;
@@ -57,36 +63,36 @@ table td .left:hover {
     transform: scale(1.03);
 }
 
-table td .left a{
+table td .left a {
     color: white;
     display: inline-block;
     padding: 15px 10px;
     transition: 0.4s ease-in-out all;
 }
 
-table td .left a:hover{
-    color:#f7f7f7;
+table td .left a:hover {
+    color: #f7f7f7;
 }
 
-table td .right{
+table td .right {
     border: 2px solid #8b27f6;
     background-color: #8b27f6;
     transition: 0.4s ease-in-out all;
 }
 
-table td .right:hover{
+table td .right:hover {
     border: 2px solid #7617d9;
-    background-color:#7617d9 ;
+    background-color: #7617d9;
     transform: scale(1.03);
 }
 
-table td .right a{
-    color:#f7f7f7;
+table td .right a {
+    color: #f7f7f7;
     display: inline-block;
     padding: 15px 10px;
     transition: 0.4s ease-in-out all;
 }
 
-table td .right a:hover{
+table td .right a:hover {
     color: white;
 }
