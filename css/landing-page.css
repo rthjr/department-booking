@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Khmer&display=swap');
+
 header {
     height: 100vh;
     background-image:
@@ -215,78 +217,156 @@ header {
     background-color: #37016a;
 }
 
+/* Item Container */
 .promotion .promotion-content .item {
     width: 380px;
-    height: 500px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
     transition: 0.4s ease-in-out all;
-
     display: flex;
+    flex-direction: column;
+    overflow: visible;
 }
 
+/* Image Section */
 .promotion .promotion-content .item .item-image {
-    width: 380px;
+    width: 100%;
     height: 300px;
     overflow: hidden;
+    position: relative;
 }
 
 .promotion .promotion-content .item .item-image img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 10px 10px 0px 0px;
 }
 
-.promotion .promotion-content .item table {
-    width: 100%;
-    height: 200px;
+/* Content Section */
+.promotion .promotion-content .item .item-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: auto;
 }
 
-.promotion .promotion-content table tr td {
-    padding: 10px 20px;
+.details {
+    margin-top: 1rem;
 }
 
-.promotion .promotion-content table tr td h3{
+/* Details Rows */
+.promotion .promotion-content .item .details .detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.kjs {
+    margin-top: 1.5rem;
+}
+
+.promotion .promotion-content .item .details h3 {
     font-weight: 600;
     color: #292929;
     font-size: 20px;
 }
 
-
-.promotion .promotion-content table tr td h4{
+.promotion .promotion-content .item .details h4 {
     font-weight: 600;
     color: #292929;
     font-size: 15px;
 }
 
-.promotion .promotion-content table tr td span i{
+.promotion .promotion-content .item .details span {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.promotion .promotion-content .item .details span i {
     color: red;
 }
 
-.promotion .promotion-content table tr td a{
+/* Action Row */
+.promotion .promotion-content .item .action-row a {
     text-decoration: none;
     font-weight: 600;
-    color: #37016a;
     font-size: 15px;
-    display: inline-block;
+    color: #f7f7f7;
     padding: 6px 10px;
     border-radius: 7px;
     background-color: #6118aa;
-    transition: 0.4s ease-in-out all;
-    color: #f7f7f7;
+    transition: background-color 0.4s ease-in-out;
+    display: block;
+    text-align: center;
+    width: fit-content;
+    margin-left: auto;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
-.promotion .promotion-content table tr td a:hover{
+.img-span-popular {
+    position: absolute;
+    color: green;
+    background-color: rgba(0, 0, 0, 0.202);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 10px;
+}
+
+.promotion .promotion-content .item .action-row a:hover {
     background-color: #37016a;
 }
 
+/* Bottom Border */
+.promotion .promotion-content .item .border-bottom-card {
+    border-top: 2px solid black;
+    margin-top: auto;
+    width: 100%;
+    height: 2px;
+}
+
+/* Hover Effect */
 .promotion .promotion-content .item:hover {
     transform: scale(1.03);
 }
 
+pre {
+    font-weight: 600;
+    font-size: 15px;
+    font-family: "Khmer", sans-serif;
+}
 
-/* end promotion */
-/* start popular place */
+.popular-place .text {
+    margin-top: 20px;
+}
+
+.popular-place .text h4 {
+    text-align: right;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.popular-place .text h4 a {
+    border-radius: 5px;
+    background-color: #6118aa;
+    color: #f7f7f7;
+    padding: 6px 13px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.4s ease-in-out all;
+}
+
+.popular-place .text h4 a:hover {
+    background-color: #37016a;
+}
+
 .popular-place {
     height: 100%;
     margin-top: 46px;
@@ -297,6 +377,9 @@ header {
     color: #37016a;
     text-align: center;
 }
+
+/* end promotion */
+/* start popular place */
 
 .promotion {
     overflow-x: auto;
@@ -316,7 +399,8 @@ header {
 .box-dis {
     min-width: 600px;
     height: 300px;
-    background-color: #f7f7f7;
+    border: 2px solid black;
+    overflow: hidden;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -324,13 +408,13 @@ header {
     font-size: 20px;
 }
 
-.box-dis .row{
+.box-dis .row {
     display: flex;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.box-dis .col-6{
+.box-dis .col-6 {
     width: 300px;
     height: 300px;
     overflow: hidden;
@@ -355,80 +439,62 @@ header {
     border-radius: 7px;
 }
 
-.discount-overlay h4{
+.discount-overlay h4 {
     font-weight: 600;
     color: #f7f7f7;
     font-size: 15px;
 }
 
-.box-dis .col-6 img{
+.discount-overlay span{
+    color: green;
+}
+
+.box-dis .col-6 img {
     width: 100%;
     height: 100%;
 }
 
-.popular-place .text{
-    margin-top: 20px;
+.details {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.popular-place .text h4{
-    text-align: right;
-    font-weight: 600;
-    font-size: 15px;
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
 }
 
-.popular-place .text h4 a{
-    border-radius: 5px;
-    background-color: #6118aa;
-    color: #f7f7f7;
-    padding: 6px 13px;
-    text-decoration: none;
-    display: inline-block;
-    transition: 0.4s ease-in-out all;
-}
-
-.popular-place .text h4 a:hover{
-    background-color: #37016a;
-}
-
-.promotion .scroll-container .box-dis .col-6 table{
-    width: 100%;
-    height: 300px;
-}
-
-.promotion .scroll-container .box-dis .col-6 table tr td{
-    padding: 0px 2px;
-}
-
-.promotion .scroll-container .box-dis .col-6 table tr td h3{
+.detail-item h3 {
     font-weight: 600;
     color: #292929;
     font-size: 20px;
+    margin: 0;
 }
 
-.promotion .scroll-container .box-dis .col-6 table tr td h4{
-    font-weight: 600;
+.detail-item h4,
+.detail-item span {
     color: #292929;
-    font-size: 15px;
+    font-size: 13px;
+    margin: 0;
 }
 
-.promotion .scroll-container .box-dis .col-6 table tr td span{
-    font-size: 15px;
-}
-
-.promotion .scroll-container .box-dis .col-6 table tr td i{
-    color: red;
-}
-
-.promotion .scroll-container .box-dis .col-6 table tr td a{
+.detail-action a {
     text-decoration: none;
     font-weight: 600;
-    color: #37016a;
+    color: white;
     font-size: 15px;
     display: inline-block;
     padding: 6px 10px;
+    width: 100%;
+    text-align: center;
     border-radius: 7px;
     background-color: #6118aa;
-    transition: 0.4s ease-in-out all;
-    color: #f7f7f7;
+    transition: 0.4s ease
 }
 
+.detail-action a:hover {
+    background-color: #37016a;
+}

@@ -13,7 +13,7 @@
 
 main .h2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     margin-top: 40px;
 }
@@ -28,12 +28,18 @@ main .h2 {
     gap: 30px;
 }
 
-.promotion-row .promotion-box {
+.promotion-row .promotion-box{
     width: 380px;
-    height: 100%;
+    height: 100%; 
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: white;
     padding: 10px;
     border-radius: 10px;
+    transition: 0.4s ease-in-out all;
+}
+
+.promotion-row .promotion-box:hover {
+    transform: scale(1.03);
 }
 
 .promotion-row .promotion-box .promotion-photo {
@@ -51,7 +57,7 @@ main .h2 {
 .promotion-row .promotion-box .promotion-content .rate h3 {
     text-align: center;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .like-best-offer {
@@ -132,4 +138,62 @@ main .h2 {
 .money span {
     color: green;
     font-weight: 600;
+}
+
+/* Search Engine */
+.search-engine {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.search-engine .sdf {
+    display: flex;
+    flex-direction: column;
+    width: 22%; /* To ensure equal space for each select box */
+}
+
+.search-engine select {
+    padding: 0.5rem;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.separator {
+    border-right: 2px solid black;
+    height: 70px;
+}
+
+select{
+    font-family: "Khmer", sans-serif;
+}
+
+
+
+.sdf .bsdf {
+    width: 100%;
+    padding: .7rem;
+    border: none;
+    color: white;
+    background-color: #7617d9;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.sdf .bsdf:hover {
+    background-color: #8b27f6;
+    cursor: pointer;
+}
+
+.jjk{
+    display: flex;
+    gap: 10px;
 }

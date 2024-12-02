@@ -1,4 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Khmer&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Khmer", sans-serif;
+    background-color: #faf5ff;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
 
 .banner-popular {
     width: 100%;
@@ -10,19 +30,19 @@
 
 
 
-.banner-popular img{
+.banner-popular img {
     width: 100%;
     height: 100%;
 }
 
-main .h2{
+main .h2 {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     margin-top: 40px;
 }
 
-.promotion-row{
+.promotion-row {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -32,64 +52,71 @@ main .h2{
     gap: 30px;
 }
 
-.promotion-row .promotion-box{
+
+.promotion-row .promotion-box {
     width: 380px;
-    height: 100%; 
+    height: 100%;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 10px;
     border-radius: 10px;
+    transition: 0.4s ease-in-out all;
+    background-color: white;
 }
 
-.promotion-row .promotion-box .promotion-photo{
+.promotion-row:hover .promotion-box {
+    transform: scale(1.03);
+}
+
+.promotion-row .promotion-box .promotion-photo {
     width: 100%;
     height: 250px;
     overflow: hidden;
     border-radius: 10px 10px 0px 0px;
 }
 
-.promotion-row .promotion-box .promotion-photo img{
+.promotion-row .promotion-box .promotion-photo img {
     width: 100%;
     height: 100%;
 }
 
-.promotion-row .promotion-box .promotion-content .rate h3{
+.promotion-row .promotion-box .promotion-content .rate h3 {
     text-align: center;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 20px;
 }
 
-.like-best-offer{
+.like-best-offer {
     display: flex;
     justify-content: space-between;
 }
 
-.like-best-offer .discount{
+.like-best-offer .discount {
     color: green;
 }
 
-.promotion-row .promotion-box .promotion-content .rate span{
+.promotion-row .promotion-box .promotion-content .rate span {
     font-weight: 600;
 }
 
-.promotion-row .promotion-box .promotion-content .rate span i{
+.promotion-row .promotion-box .promotion-content .rate span i {
     color: red;
 }
 
-.promotion-row .promotion-box .promotion-content .promotion-detail .detail{
+.promotion-row .promotion-box .promotion-content .promotion-detail .detail {
     margin-top: 10px;
 }
 
-.promotion-row .promotion-box .promotion-content .promotion-detail h3{
+.promotion-row .promotion-box .promotion-content .promotion-detail h3 {
     margin-top: 10px;
 }
 
-.promotion-row .promotion-box .promotion-content .deadline{
+.promotion-row .promotion-box .promotion-content .deadline {
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
 
-.promotion-row .promotion-box a{
+.promotion-row .promotion-box a {
     padding: 10px 15px;
     display: inline-block;
     border-radius: 10px;
@@ -99,39 +126,21 @@ main .h2{
     background-color: #8b27f6;
     margin-top: 10px;
 }
-.promotion-row .promotion-box a:hover{
+
+.promotion-row .promotion-box a:hover {
     background-color: #7617d9;
 }
 
-#loadMore {
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    margin: 30px auto;
-    font-size: 16px;
-    color: white;
-    background-color: #8b27f6;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-weight: 600;
-    font-family: "Khmer", sans-serif;
-    font-size: 1rem;
-}
 
-#loadMore:hover {
-    background-color: #7617d9;;
-}
 
-.money{
+.money {
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
 }
 
-.money span{
+.money span {
     color: green;
     font-weight: 600;
 }
@@ -156,4 +165,83 @@ main .h2{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Search Engine */
+.search-engine {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.search-engine .sdf {
+    display: flex;
+    flex-direction: column;
+    width: 22%;
+    /* To ensure equal space for each select box */
+    
+
+}
+
+select{
+    font-family: "Khmer", sans-serif;
+}
+
+.search-engine select {
+    padding: 0.5rem;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.separator {
+    border-right: 2px solid black;
+    height: 70px;
+}
+
+select{
+    font-family: "Khmer", sans-serif;
+}
+
+
+
+.sdf .bsdf {
+    width: 100%;
+    padding: .7rem;
+    border: none;
+    color: white;
+    background-color: #7617d9;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.sdf .bsdf:hover {
+    background-color: #8b27f6;
+    cursor: pointer;
+}
+
+#loadMore {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    font-size: 18px;
+    color: white;
+    background-color: #8b27f6;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: fit-content;
+}
+
+#loadMore:hover {
+    background-color: #7617d9;
 }
